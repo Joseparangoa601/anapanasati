@@ -1,0 +1,208 @@
+{
+  "variante": "abierta-completa-campana",
+  "modo": "campana",
+  "audio": "abierta-completa-campana.mp3",
+  "duracion_total_s": 3044,
+  "segmentos": [
+    {
+      "id": "apertura",
+      "ref": "apertura_completa_ab",
+      "grupo": "preparacion",
+      "numero": null,
+      "titulo": "Motivación y cuatro deseos",
+      "verso": "Que esta práctica despierte en mí claridad y bondad, para servir mejor a los demás.",
+      "inicio_s": 0.0,
+      "fin_s": 132.0
+    },
+    {
+      "id": "p01",
+      "ref": "p01",
+      "grupo": "cuerpo",
+      "numero": 1,
+      "titulo": "Respiración larga",
+      "verso": "Inspiro largo, sé que inspiro largo. Espiro largo, sé que espiro largo.",
+      "inicio_s": 132.0,
+      "fin_s": 310.0
+    },
+    {
+      "id": "p02",
+      "ref": "p02",
+      "grupo": "cuerpo",
+      "numero": 2,
+      "titulo": "Respiración breve",
+      "verso": "Inspiro breve, sé que inspiro breve. Espiro breve, sé que espiro breve.",
+      "inicio_s": 310.0,
+      "fin_s": 428.0
+    },
+    {
+      "id": "p03",
+      "ref": "p03",
+      "grupo": "cuerpo",
+      "numero": 3,
+      "titulo": "Todo el cuerpo",
+      "verso": "Inspiro y siento todo mi cuerpo. Espiro y siento todo mi cuerpo.",
+      "inicio_s": 428.0,
+      "fin_s": 606.0
+    },
+    {
+      "id": "p04",
+      "ref": "p04",
+      "grupo": "cuerpo",
+      "numero": 4,
+      "titulo": "Calmar el cuerpo",
+      "verso": "Inspiro y calmo mi cuerpo. Espiro y calmo mi cuerpo.",
+      "inicio_s": 606.0,
+      "fin_s": 783.0
+    },
+    {
+      "id": "p05",
+      "ref": "p05",
+      "grupo": "sentimientos",
+      "numero": 5,
+      "titulo": "Gozo",
+      "verso": "Inspiro y siento gozo. Espiro y siento gozo.",
+      "inicio_s": 783.0,
+      "fin_s": 901.0
+    },
+    {
+      "id": "p06",
+      "ref": "p06",
+      "grupo": "sentimientos",
+      "numero": 6,
+      "titulo": "Felicidad",
+      "verso": "Inspiro y siento felicidad. Espiro y siento felicidad.",
+      "inicio_s": 901.0,
+      "fin_s": 1079.0
+    },
+    {
+      "id": "p07",
+      "ref": "p07",
+      "grupo": "sentimientos",
+      "numero": 7,
+      "titulo": "Las actividades de la mente",
+      "verso": "Inspiro y conozco las actividades de mi mente. Espiro y las conozco.",
+      "inicio_s": 1079.0,
+      "fin_s": 1197.0
+    },
+    {
+      "id": "p08",
+      "ref": "p08",
+      "grupo": "sentimientos",
+      "numero": 8,
+      "titulo": "Calmar las actividades de la mente",
+      "verso": "Inspiro y calmo las actividades de mi mente. Espiro y las calmo.",
+      "inicio_s": 1197.0,
+      "fin_s": 1375.0
+    },
+    {
+      "id": "p09",
+      "ref": "p09_ab",
+      "grupo": "mente",
+      "numero": 9,
+      "titulo": "Conocer la mente",
+      "verso": "Inspiro y conozco mi mente. Espiro y conozco mi mente.",
+      "inicio_s": 1375.0,
+      "fin_s": 1493.0
+    },
+    {
+      "id": "p10",
+      "ref": "p10_ab",
+      "grupo": "mente",
+      "numero": 10,
+      "titulo": "Alegrar la mente",
+      "verso": "Inspiro y alegro mi mente. Espiro y alegro mi mente.",
+      "inicio_s": 1493.0,
+      "fin_s": 1611.0
+    },
+    {
+      "id": "p11",
+      "ref": "p11",
+      "grupo": "mente",
+      "numero": 11,
+      "titulo": "Concentrar la mente",
+      "verso": "Inspiro y concentro mi mente. Espiro y concentro mi mente.",
+      "inicio_s": 1611.0,
+      "fin_s": 1848.0
+    },
+    {
+      "id": "p12",
+      "ref": "p12",
+      "grupo": "mente",
+      "numero": 12,
+      "titulo": "Liberar la mente",
+      "verso": "Inspiro y libero mi mente. Espiro y libero mi mente.",
+      "inicio_s": 1848.0,
+      "fin_s": 1966.0
+    },
+    {
+      "id": "p13",
+      "ref": "p13",
+      "grupo": "vision",
+      "numero": 13,
+      "titulo": "Impermanencia",
+      "verso": "Inspiro y observo la impermanencia. Espiro y observo la impermanencia.",
+      "inicio_s": 1966.0,
+      "fin_s": 2244.0
+    },
+    {
+      "id": "p14",
+      "ref": "p14",
+      "grupo": "vision",
+      "numero": 14,
+      "titulo": "Desvanecimiento del deseo",
+      "verso": "Inspiro y observo cómo se desvanece el deseo. Espiro y lo observo.",
+      "inicio_s": 2244.0,
+      "fin_s": 2421.0
+    },
+    {
+      "id": "p15",
+      "ref": "p15",
+      "grupo": "vision",
+      "numero": 15,
+      "titulo": "Cesación",
+      "verso": "Inspiro y observo la cesación. Espiro y observo la cesación.",
+      "inicio_s": 2421.0,
+      "fin_s": 2598.0
+    },
+    {
+      "id": "p16",
+      "ref": "p16",
+      "grupo": "vision",
+      "numero": 16,
+      "titulo": "Soltar",
+      "verso": "Inspiro y observo el soltar. Espiro y observo el soltar.",
+      "inicio_s": 2598.0,
+      "fin_s": 2835.0
+    },
+    {
+      "id": "reposo",
+      "ref": "reposo",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Reposo sin forma",
+      "verso": "Sin hacer nada, y despierto.",
+      "inicio_s": 2835.0,
+      "fin_s": 2905.0
+    },
+    {
+      "id": "transicion",
+      "ref": "transicion_ab",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Tres respiraciones",
+      "verso": "Cuerpo, lugar, movimiento.",
+      "inicio_s": 2905.0,
+      "fin_s": 2977.0
+    },
+    {
+      "id": "dedicacion",
+      "ref": "dedicacion_ab",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Dedicación",
+      "verso": "Que lo bueno de esta práctica no se quede en mí.",
+      "inicio_s": 2977.0,
+      "fin_s": 3044.0
+    }
+  ]
+}

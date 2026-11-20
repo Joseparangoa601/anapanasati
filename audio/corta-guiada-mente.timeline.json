@@ -1,0 +1,128 @@
+{
+  "variante": "corta-guiada-mente",
+  "modo": "guiado",
+  "audio": "corta-guiada-mente.mp3",
+  "duracion_total_s": 1557,
+  "segmentos": [
+    {
+      "id": "apertura",
+      "ref": "apertura_corta",
+      "grupo": "preparacion",
+      "numero": null,
+      "titulo": "Refugio, bodhichitta e inconmensurables",
+      "verso": "Tomo refugio en el Buddha, el Dharma y la Asamblea Suprema hasta alcanzar la perfección. Lograré la Iluminación para el beneficio de todos los seres con el mérito de las acciones generosas y las demás virtudes.",
+      "inicio_s": 0.0,
+      "fin_s": 154.0
+    },
+    {
+      "id": "p01",
+      "ref": "p01",
+      "grupo": "cuerpo",
+      "numero": 1,
+      "titulo": "Respiración larga",
+      "verso": "Inspiro largo, sé que inspiro largo. Espiro largo, sé que espiro largo.",
+      "inicio_s": 154.0,
+      "fin_s": 272.0
+    },
+    {
+      "id": "p04",
+      "ref": "p04",
+      "grupo": "cuerpo",
+      "numero": 4,
+      "titulo": "Calmar el cuerpo",
+      "verso": "Inspiro y calmo mi cuerpo. Espiro y calmo mi cuerpo.",
+      "inicio_s": 272.0,
+      "fin_s": 389.0
+    },
+    {
+      "id": "p09",
+      "ref": "p09",
+      "grupo": "mente",
+      "numero": 9,
+      "titulo": "Conocer la mente",
+      "verso": "Inspiro y conozco mi mente. Espiro y conozco mi mente.",
+      "inicio_s": 389.0,
+      "fin_s": 507.0
+    },
+    {
+      "id": "p10",
+      "ref": "p10",
+      "grupo": "mente",
+      "numero": 10,
+      "titulo": "Alegrar la mente",
+      "verso": "Inspiro y alegro mi mente. Espiro y alegro mi mente.",
+      "inicio_s": 507.0,
+      "fin_s": 625.0
+    },
+    {
+      "id": "p11",
+      "ref": "p11",
+      "grupo": "mente",
+      "numero": 11,
+      "titulo": "Concentrar la mente",
+      "verso": "Inspiro y concentro mi mente. Espiro y concentro mi mente.",
+      "inicio_s": 625.0,
+      "fin_s": 742.0
+    },
+    {
+      "id": "p12",
+      "ref": "p12",
+      "grupo": "mente",
+      "numero": 12,
+      "titulo": "Liberar la mente",
+      "verso": "Inspiro y libero mi mente. Espiro y libero mi mente.",
+      "inicio_s": 742.0,
+      "fin_s": 860.0
+    },
+    {
+      "id": "p13",
+      "ref": "p13",
+      "grupo": "vision",
+      "numero": 13,
+      "titulo": "Impermanencia",
+      "verso": "Inspiro y observo la impermanencia. Espiro y observo la impermanencia.",
+      "inicio_s": 860.0,
+      "fin_s": 1118.0
+    },
+    {
+      "id": "p16",
+      "ref": "p16",
+      "grupo": "vision",
+      "numero": 16,
+      "titulo": "Soltar",
+      "verso": "Inspiro y observo el soltar. Espiro y observo el soltar.",
+      "inicio_s": 1118.0,
+      "fin_s": 1295.0
+    },
+    {
+      "id": "reposo",
+      "ref": "reposo",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Reposo sin forma",
+      "verso": "Sin hacer nada, y despierto.",
+      "inicio_s": 1295.0,
+      "fin_s": 1355.0
+    },
+    {
+      "id": "transicion",
+      "ref": "transicion",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Tres respiraciones",
+      "verso": "Cuerpo, lugar, movimiento.",
+      "inicio_s": 1355.0,
+      "fin_s": 1427.0
+    },
+    {
+      "id": "dedicacion",
+      "ref": "dedicacion",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Dedicación de méritos",
+      "verso": "A través de esta virtud, alcanzaré el estado del Omnisciente.",
+      "inicio_s": 1427.0,
+      "fin_s": 1557.0
+    }
+  ]
+}

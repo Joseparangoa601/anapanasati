@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#14110f" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="Práctica guiada de Anapanasati: los dieciséis peldaños de la respiración." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="./manifest-abierta.webmanifest" />
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+  <title>Anapanasati</title>
+  <script type="module" crossorigin src="./assets/index-D66gK7q0.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BBs6V5IN.css">
+</head>
+<body>
+  <main id="app">
+    <!-- Inicio -->
+    <section id="inicio" class="pantalla" aria-labelledby="titulo-inicio">
+      <h1 id="titulo-inicio">Anapanasati</h1>
+
+      <div id="retomar" class="retomar" hidden>
+        <p id="retomar-texto">Quedó una sesión abierta.</p>
+        <div class="fila">
+          <button id="btn-retomar" class="btn">Retomar</button>
+          <button id="btn-descartar" class="btn btn-sutil">Empezar de nuevo</button>
+        </div>
+      </div>
+
+      <fieldset class="selector">
+        <legend>Duración</legend>
+        <div class="segmentado">
+          <input type="radio" name="duracion" id="dur-completa" value="completa" checked />
+          <label for="dur-completa">Completa</label>
+          <input type="radio" name="duracion" id="dur-corta" value="corta" />
+          <label for="dur-corta">Corta</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="selector">
+        <legend>Modo</legend>
+        <div class="segmentado">
+          <input type="radio" name="modo" id="modo-guiado" value="guiado" checked />
+          <label for="modo-guiado">Guiado</label>
+          <input type="radio" name="modo" id="modo-campana" value="campana" />
+          <label for="modo-campana">Campana</label>
+        </div>
+      </fieldset>
+
+      <div id="opcion-devocional" class="selector interruptor">
+        <label id="lbl-devocional" for="devocional">Puerta devocional</label>
+        <input type="checkbox" id="devocional" role="switch" />
+      </div>
+
+      <fieldset id="opcion-grupo" class="selector" hidden>
+        <legend>Grupo central de hoy</legend>
+        <div class="segmentado">
+          <input type="radio" name="grupo" id="grupo-sentimientos" value="sentimientos" checked />
+          <label for="grupo-sentimientos">Los sentimientos</label>
+          <input type="radio" name="grupo" id="grupo-mente" value="mente" />
+          <label for="grupo-mente">La mente</label>
+        </div>
+      </fieldset>
+
+      <p id="duracion-total" class="duracion" aria-live="polite"></p>
+
+      <button id="btn-comenzar" class="btn btn-principal">Comenzar</button>
+      <p class="silencio">
+        Antes de comenzar, activa <button id="btn-guia-silencio" class="enlace" type="button">No molestar</button>
+        para que nada interrumpa la sesión.
+      </p>
+
+      <p id="pie" class="pie"></p>
+    </section>
+
+    <!-- Texto de la práctica -->
+    <section id="texto" class="pantalla pantalla-texto" hidden aria-labelledby="titulo-texto">
+      <header class="cabecera-texto">
+        <h1 id="titulo-texto" class="titulo-pagina">Texto de la práctica</h1>
+        <p class="subtitulo">Para repasarla leyendo hasta aprenderla.</p>
+        <fieldset class="selector">
+          <legend class="oculto">Práctica</legend>
+          <div class="segmentado segmentado-3">
+            <input type="radio" name="t-practica" id="t-completa" value="completa" checked />
+            <label for="t-completa">Completa</label>
+            <input type="radio" name="t-practica" id="t-sentimientos" value="sentimientos" />
+            <label for="t-sentimientos">Corta · Sentimientos</label>
+            <input type="radio" name="t-practica" id="t-mente" value="mente" />
+            <label for="t-mente">Corta · Mente</label>
+          </div>
+        </fieldset>
+        <div class="selector interruptor">
+          <label id="t-lbl-devocional" for="t-devocional">Incluir puerta devocional</label>
+          <input type="checkbox" id="t-devocional" role="switch" />
+        </div>
+      </header>
+      <nav id="t-indice" class="indice" aria-label="Ir a la sección"></nav>
+      <article id="t-cuerpo" class="lectura"></article>
+      <button id="t-arriba" class="btn btn-sutil arriba" type="button">Volver arriba</button>
+    </section>
+
+    <!-- Oraciones -->
+    <section id="oraciones" class="pantalla pantalla-oraciones" hidden aria-labelledby="titulo-oraciones">
+      <div id="or-vista-lista" class="or-vista">
+        <h1 id="titulo-oraciones" class="titulo-pagina">Oraciones</h1>
+        <p class="subtitulo">Para los momentos de oración, con o sin meditación.</p>
+        <div id="or-lista" class="tarjeta"></div>
+        <p id="or-samaya" class="pie-grupo"></p>
+      </div>
+      <div id="or-vista-detalle" class="or-vista" hidden>
+        <button id="or-volver" class="enlace or-volver" type="button">‹ Oraciones</button>
+        <header class="or-cab">
+          <h1 id="or-titulo" class="titulo-pagina"></h1>
+          <p id="or-subtitulo" class="subtitulo"></p>
+        </header>
+        <div class="tarjeta">
+          <div class="fila-ajuste interruptor">
+            <label for="or-recitar">
+              <span class="etiqueta">Recitar yo</span>
+              <span class="ayuda">Sin audio, con el texto grande, para decirla con tu propia voz.</span>
+            </label>
+            <input type="checkbox" id="or-recitar" role="switch" />
+          </div>
+          <div id="or-controles" class="fila-ajuste fila-columna">
+            <button id="or-play" class="btn btn-principal" type="button">Escuchar</button>
+            <div class="progreso" aria-hidden="true"><div id="or-avance" class="progreso-barra"></div></div>
+            <p id="or-tiempo" class="ayuda or-tiempo"></p>
+          </div>
+        </div>
+        <article id="or-texto" class="or-texto"></article>
+        <p class="pie-grupo or-fuente">
+          <span id="or-atribucion"></span> ·
+          <a id="or-licencia" class="enlace-texto" href="#" target="_blank" rel="noopener">licencia</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Ajustes -->
+    <section id="ajustes" class="pantalla pantalla-ajustes" hidden aria-labelledby="titulo-ajustes">
+      <h1 id="titulo-ajustes" class="titulo-pagina">Ajustes</h1>
+
+      <section class="grupo-ajustes" aria-labelledby="aj-version-practica">
+        <h2 id="aj-version-practica" class="grupo-titulo">Versión de la práctica</h2>
+        <div class="tarjeta">
+          <fieldset class="fila-ajuste fila-columna">
+            <legend class="oculto">Versión de la práctica</legend>
+            <div class="segmentado">
+              <input type="radio" name="tradicion" id="trad-budista" value="budista" />
+              <label for="trad-budista">Con oraciones tradicionales</label>
+              <input type="radio" name="tradicion" id="trad-abierta" value="abierta" checked />
+              <label for="trad-abierta">Puerta abierta</label>
+            </div>
+            <p id="aj-tradicion-ayuda" class="ayuda"></p>
+          </fieldset>
+          <fieldset id="aj-chenrezig" class="fila-ajuste fila-columna">
+            <legend class="etiqueta">Chenrezig en la puerta devocional</legend>
+            <div class="segmentado">
+              <input type="radio" name="chenrezig" id="chen-frente" value="frente" checked />
+              <label for="chen-frente">Frente a ti</label>
+              <input type="radio" name="chenrezig" id="chen-corazon" value="corazon" />
+              <label for="chen-corazon">En tu corazón</label>
+            </div>
+            <p class="ayuda">Frente a ti: le ofreces y te postras ante él, y al final entra en tu corazón. En tu corazón: mora ahí desde el inicio y su luz llena tu cuerpo, tu palabra y tu mente. Solo cambia la sesión guiada.</p>
+          </fieldset>
+        </div>
+      </section>
+
+      <section class="grupo-ajustes" aria-labelledby="aj-sesion">
+        <h2 id="aj-sesion" class="grupo-titulo">Durante la sesión</h2>
+        <div class="tarjeta">
+          <div class="fila-ajuste interruptor">
+            <label for="mostrar-tiempo">
+              <span class="etiqueta">Mostrar tiempo restante</span>
+              <span class="ayuda">Redondeado en minutos. Apagado, la sesión no muestra reloj.</span>
+            </label>
+            <input type="checkbox" id="mostrar-tiempo" role="switch" />
+          </div>
+          <button id="aj-silencio" class="fila-ajuste fila-boton" type="button">
+            <span>
+              <span class="etiqueta">Configurar No molestar</span>
+              <span class="ayuda">Que llamadas y mensajes no interrumpan.</span>
+            </span>
+            <span class="chevron" aria-hidden="true">›</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="grupo-ajustes" aria-labelledby="aj-lectura">
+        <h2 id="aj-lectura" class="grupo-titulo">Lectura</h2>
+        <div class="tarjeta">
+          <fieldset class="fila-ajuste fila-columna">
+            <legend class="etiqueta">Tamaño del texto</legend>
+            <div class="segmentado">
+              <input type="radio" name="tamano" id="tam-normal" value="normal" checked />
+              <label for="tam-normal">Normal</label>
+              <input type="radio" name="tamano" id="tam-grande" value="grande" />
+              <label for="tam-grande">Grande</label>
+              <input type="radio" name="tamano" id="tam-muy-grande" value="muy-grande" />
+              <label for="tam-muy-grande">Muy grande</label>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+
+      <section class="grupo-ajustes" aria-labelledby="aj-offline">
+        <h2 id="aj-offline" class="grupo-titulo">Uso sin conexión</h2>
+        <div class="tarjeta">
+          <div class="fila-ajuste fila-columna">
+            <span class="etiqueta">Sesiones guardadas en este teléfono</span>
+            <span id="aj-guardadas" class="ayuda">Comprobando…</span>
+            <div class="progreso" aria-hidden="true"><div id="aj-progreso" class="progreso-barra"></div></div>
+            <button id="btn-descargar" class="btn btn-ancho">Descargar todas</button>
+            <p id="descarga-estado" class="ayuda" aria-live="polite"></p>
+          </div>
+        </div>
+        <p class="pie-grupo">Cada sesión que reproduces con conexión queda guardada sola. Usa este botón antes de
+          meditar sin internet. Al actualizarse la app, la versión anterior se borra sola.</p>
+      </section>
+
+      <section class="grupo-ajustes" aria-labelledby="aj-acerca">
+        <h2 id="aj-acerca" class="grupo-titulo">Acerca de</h2>
+        <div class="tarjeta">
+          <div class="fila-ajuste"><span class="etiqueta">Práctica</span><span class="valor">Anapanasati · 16 peldaños</span></div>
+          <div class="fila-ajuste"><span class="etiqueta">Versión</span><span id="aj-version" class="valor"></span></div>
+        </div>
+        <p id="pie-ajustes" class="pie-grupo"></p>
+      </section>
+    </section>
+
+    <nav id="pestanas" class="pestanas" aria-label="Secciones">
+      <button class="pestana" data-pantalla="inicio" aria-current="page" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 8.2 6.3" /><circle cx="12" cy="12" r="1.6" /></svg>
+        <span>Practicar</span>
+      </button>
+      <button class="pestana" data-pantalla="texto" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5c2.8-1 5.5-.8 8 .9v13c-2.5-1.7-5.2-1.9-8-.9z" /><path d="M20 5.5c-2.8-1-5.5-.8-8 .9v13c2.5-1.7 5.2-1.9 8-.9z" /></svg>
+        <span>Texto</span>
+      </button>
+      <button id="pestana-oraciones" class="pestana" data-pantalla="oraciones" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-2 3-2 5 0 7 2-2 2-4 0-7z" /><path d="M5 21h14M7 21c0-4 2.2-7 5-8 2.8 1 5 4 5 8" /></svg>
+        <span>Oraciones</span>
+      </button>
+      <button class="pestana" data-pantalla="ajustes" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8" /><circle cx="16" cy="7" r="2" /><circle cx="10" cy="17" r="2" /></svg>
+        <span>Ajustes</span>
+      </button>
+    </nav>
+
+    <!-- Sesión -->
+    <section id="sesion" class="pantalla pantalla-sesion" hidden aria-live="polite">
+      <div id="zona-toque" class="zona-toque" role="button" tabindex="0"
+           aria-label="Mostrar u ocultar el texto completo del peldaño">
+        <p id="s-grupo" class="s-grupo"></p>
+        <h2 id="s-titulo" class="s-titulo"></h2>
+        <p id="s-verso" class="s-verso"></p>
+        <div class="avance" aria-hidden="true"><div id="s-avance" class="avance-barra"></div></div>
+        <p id="s-tiempo" class="s-tiempo" hidden></p>
+        <div id="s-texto" class="s-texto" hidden></div>
+      </div>
+      <div class="controles">
+        <button id="btn-pausa" class="btn btn-sutil" aria-label="Pausar">Pausar</button>
+        <button id="btn-terminar" class="btn btn-sutil">Terminar</button>
+      </div>
+      <p id="s-cargando" class="nota" hidden>Preparando el audio…</p>
+    </section>
+
+    <!-- Cierre -->
+    <section id="cierre" class="pantalla pantalla-cierre" hidden>
+      <p id="cierre-titulo" class="s-grupo">Dedicación de méritos</p>
+      <div id="cierre-texto" class="dedicacion"></div>
+      <button id="btn-volver" class="btn btn-sutil">Volver</button>
+    </section>
+  </main>
+
+  <dialog id="dlg-silencio" class="guia" aria-labelledby="guia-titulo">
+    <h2 id="guia-titulo">Que nada interrumpa la sesión</h2>
+    <p>Ninguna app puede bloquear llamadas ni mensajes: eso lo decide el teléfono. El modo
+      <b>No molestar</b> los silencia todos mientras meditas. Se configura una sola vez y después
+      basta con activarlo antes de sentarte.</p>
+
+    <section id="guia-iphone">
+      <h3>iPhone</h3>
+      <ol>
+        <li>Abre <b>Ajustes → Concentración</b> y toca <b>+</b> → <b>Personalizado</b>. Llámalo «Meditación».</li>
+        <li>En <b>Personas</b>, elige <b>Silenciar notificaciones de</b> y no agregues a nadie (o solo a quien
+          deba poder localizarte en una emergencia).</li>
+        <li>En <b>Apps</b>, elige <b>Silenciar notificaciones de</b> y no agregues ninguna: así WhatsApp y los
+          mensajes quedan en silencio.</li>
+        <li>Opcional, para emergencias: en <b>Personas → Llamadas de</b>, activa <b>Permitir llamadas
+          repetidas</b>. Si alguien llama dos veces en tres minutos, la segunda entra.</li>
+        <li>Antes de cada sesión: desliza el <b>Centro de control</b>, toca <b>Concentración → Meditación</b>
+          y elige <b>Durante una hora</b>, para que se apague solo al terminar.</li>
+      </ol>
+    </section>
+
+    <section id="guia-android">
+      <h3>Android</h3>
+      <ol>
+        <li>Abre <b>Ajustes → Sonido y vibración → No molestar</b>. En Samsung está en <b>Ajustes →
+          Notificaciones → No molestar</b>.</li>
+        <li>En <b>Llamadas</b> y <b>Mensajes</b>, elige <b>Ninguno</b> (o solo tus favoritos para emergencias).</li>
+        <li>En <b>Apps</b>, no permitas ninguna: así WhatsApp queda en silencio.</li>
+        <li>Opcional, para emergencias: activa <b>Permitir llamadas repetidas</b>.</li>
+        <li>Antes de cada sesión: baja el <b>panel rápido</b> y toca <b>No molestar</b>. Mantenlo pulsado para
+          elegir <b>Durante 1 hora</b>.</li>
+      </ol>
+    </section>
+
+    <p class="nota">Si aun así una llamada detiene la sesión, la app la reanuda sola al terminar, unos
+      segundos antes de donde quedó. En iPhone puede pedirte un toque en <b>Reanudar</b>.</p>
+    <p class="nota">Las alarmas del reloj suenan aunque esté activado No molestar.</p>
+    <div class="fila">
+      <button id="guia-cerrar" class="btn">Entendido</button>
+    </div>
+  </dialog>
+
+  <dialog id="dlg-terminar" aria-labelledby="dlg-titulo">
+    <p id="dlg-titulo">¿Terminar la sesión ahora?</p>
+    <div class="fila">
+      <button id="dlg-si" class="btn">Terminar</button>
+      <button id="dlg-no" class="btn btn-sutil">Seguir</button>
+    </div>
+  </dialog>
+
+  <audio id="audio" preload="auto"></audio>
+  <audio id="audio-oracion" preload="none"></audio>
+</body>
+</html>

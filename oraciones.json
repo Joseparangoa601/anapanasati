@@ -1,0 +1,114 @@
+{
+  "atribucion": "Libro de Oraciones, Paramita Editorial – Fundación Sakya, 2.ª ed., junio de 2023 · paramita.org · CC BY-NC-ND 3.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/deed.es",
+  "nota_samaya": "Aquí solo hay oraciones abiertas a todos. Las prácticas que requieren iniciación o votos se reciben de un maestro.",
+  "voz": "Voz de Jhenny (ElevenLabs), la misma de las meditaciones",
+  "oraciones": [
+    {
+      "id": "sutra-corazon",
+      "titulo": "Sutra del Corazón",
+      "subtitulo": "Esencia de la Perfección de la Sabiduría",
+      "archivo": "oracion-sutra-corazon",
+      "duracion_s": 396,
+      "bloques": [
+        {
+          "tipo": "titulo",
+          "texto": "Alabanza a la Perfección de la Sabiduría"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Me inclino ante la madre de los buddhas de los tres tiempos, la prajñaparamita que no nace ni cesa. Es inconcebible e inexpresable como la naturaleza del espacio, un objeto de la percepción directa solo para la mente de los aryas."
+        },
+        {
+          "tipo": "titulo",
+          "texto": "Esencia de la Perfección de la Sabiduría"
+        },
+        {
+          "tipo": "titulo",
+          "texto": "Arya-Bhagavati-Prajñaparamita Jridaya-Sutram"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "¡Homenaje a la sagrada perfección de la sabiduría!"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Así oí en cierta ocasión. El Bienaventurado se encontraba en Rayagrija, en la cima del Pico del Buitre, junto con una gran asamblea de monjes y de bodhisattvas. En aquella ocasión, el Bienaventurado estaba en la absorción meditativa llamada Apariencia Profunda que examina todo fenómeno."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Al mismo tiempo, el noble señor Avalokiteshvara, el Bodhisattva Majasattva, contemplaba cómo practicar la perfección profunda de la sabiduría y vio que los cinco agregados carecen de naturaleza inherente."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Entonces, por inspiración del Buddha, el venerable Shariputra le dijo al noble señor Avalokiteshvara, el Bodhisattva Majasattva: «¿Cómo debe proceder un hijo o hija del noble linaje, cuando desea adiestrarse en la práctica de la perfección profunda de la sabiduría?»"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Y el noble señor Avalokiteshvara, el Bodhisattva Majasattva, contestó al venerable Shariputra de la siguiente forma: «Shariputra, cualquier hijo o hija del noble linaje que desee adiestrarse en la práctica de la perfección profunda de la sabiduría, deberá hacerlo así: considerando correctamente que los cinco agregados también carecen de naturaleza inherente."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Forma es vacuidad, vacuidad es forma. Vacuidad no es más que forma y forma no es más que vacuidad. Del mismo modo, sensaciones, discernimientos, estados mentales y consciencias son vacíos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Así pues, Shariputra, todos los fenómenos son vacíos, carecen de características diferenciadoras; ni son producidos ni cesan ni son impuros ni inmaculados ni deficientes ni completos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Por tanto, Shariputra, en vacuidad no hay forma ni sensación ni discernimiento ni estados mentales ni consciencia; no hay ojo ni oído ni nariz ni lengua ni cuerpo ni mente; no hay forma visible ni sonido ni olor ni gusto ni tacto ni objetos de la mente; no hay elementos visuales y demás, hasta no haber elementos mentales ni elementos de la consciencia mental. No hay ignorancia ni extinción de la ignorancia y demás, hasta no haber envejecimiento ni muerte ni extinción del envejecimiento ni de la muerte; por tanto, no existe el sufrimiento ni su causa ni su cesación ni camino; ni sabiduría suprema ni logro ni ausencia de logro."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Por tanto, Shariputra, al no haber nada que lograr, los bodhisattvas confían y moran en la perfección de la sabiduría; con sus mentes libres de velos ya no tienen temor. Trascienden toda visión errónea y alcanzan el fin, el nirvana. También, todos los buddhas de los tres tiempos despiertan completamente a la insuperable, completa y perfecta iluminación basándose en la perfección de la sabiduría."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Por tanto, debe conocerse el mantra de la Prajñaparamita como el mantra del gran conocimiento, el mantra supremo, el mantra inigualable, el mantra que neutraliza todo sufrimiento, la verdad porque carece de error."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El mantra de la Prajñaparamita es proclamado:"
+        },
+        {
+          "tipo": "mantra",
+          "texto": "tadyathā oṃ gate gate pāragate pārasaṃgate bodhi svājā"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "De este modo, Shariputra, deberá un bodhisattva majasattva adiestrarse en la perfección profunda de la sabiduría»."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Entonces, el Bienaventurado surgió de su absorción y ensalzó al noble señor Avalokiteshvara, el Bodhisattva y Majasattva, diciendo: «¡Bien dicho, bien dicho!, hijo del noble linaje, así es hijo del buen linaje, así es. Tal como has enseñado deberá ser practicada la perfección profunda de la sabiduría e incluso los tathagatas se alegrarán»."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Cuando el Bienaventurado se pronunció así, el venerable Shariputra, el noble señor Avalokiteshvara, el Bodhisattva y Majasattva, y todos los presentes, incluyendo los seres mundanos —devas, humanos, asuras y gandarvas— se alegraron y elogiaron las palabras del Bienaventurado."
+        }
+      ],
+      "bloques_inicio_s": [
+        17.0,
+        21.94,
+        41.82,
+        46.73,
+        52.84,
+        58.81,
+        82.56,
+        100.17,
+        122.17,
+        151.01,
+        169.99,
+        187.29,
+        239.6,
+        272.57,
+        291.23,
+        298.32,
+        309.8,
+        320.74,
+        351.35
+      ]
+    }
+  ]
+}

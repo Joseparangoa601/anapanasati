@@ -1,0 +1,188 @@
+{
+  "variante": "corta-campana-sentimientos-devocional",
+  "modo": "campana",
+  "audio": "corta-campana-sentimientos-devocional.mp3",
+  "duracion_total_s": 1870,
+  "segmentos": [
+    {
+      "id": "apertura",
+      "ref": "apertura_corta",
+      "grupo": "preparacion",
+      "numero": null,
+      "titulo": "Refugio, bodhichitta e inconmensurables",
+      "verso": "Tomo refugio en el Buddha, el Dharma y la Asamblea Suprema hasta alcanzar la perfección. Lograré la Iluminación para el beneficio de todos los seres con el mérito de las acciones generosas y las demás virtudes.",
+      "inicio_s": 0.0,
+      "fin_s": 154.0
+    },
+    {
+      "id": "dev1",
+      "ref": "dev1",
+      "grupo": "devocional",
+      "numero": null,
+      "titulo": "Chenrezig en el loto",
+      "verso": null,
+      "inicio_s": 154.0,
+      "fin_s": 200.0
+    },
+    {
+      "id": "dev2",
+      "ref": "dev2",
+      "grupo": "devocional",
+      "numero": null,
+      "titulo": "Las flechas de Māra se vuelven flores",
+      "verso": null,
+      "inicio_s": 200.0,
+      "fin_s": 269.0
+    },
+    {
+      "id": "dev3",
+      "ref": "dev3",
+      "grupo": "devocional",
+      "numero": null,
+      "titulo": "Ofrenda de luz",
+      "verso": null,
+      "inicio_s": 269.0,
+      "fin_s": 300.0
+    },
+    {
+      "id": "dev4",
+      "ref": "dev4",
+      "grupo": "devocional",
+      "numero": null,
+      "titulo": "Postraciones y entrega",
+      "verso": null,
+      "inicio_s": 300.0,
+      "fin_s": 355.0
+    },
+    {
+      "id": "dev5",
+      "ref": "dev5",
+      "grupo": "devocional",
+      "numero": null,
+      "titulo": "Mantra",
+      "verso": "Om mani padme hum",
+      "inicio_s": 355.0,
+      "fin_s": 431.0
+    },
+    {
+      "id": "dev6",
+      "ref": "dev6",
+      "grupo": "devocional",
+      "numero": null,
+      "titulo": "Disolución",
+      "verso": null,
+      "inicio_s": 431.0,
+      "fin_s": 466.0
+    },
+    {
+      "id": "p01",
+      "ref": "p01",
+      "grupo": "cuerpo",
+      "numero": 1,
+      "titulo": "Respiración larga",
+      "verso": "Inspiro largo, sé que inspiro largo. Espiro largo, sé que espiro largo.",
+      "inicio_s": 466.0,
+      "fin_s": 584.0
+    },
+    {
+      "id": "p04",
+      "ref": "p04",
+      "grupo": "cuerpo",
+      "numero": 4,
+      "titulo": "Calmar el cuerpo",
+      "verso": "Inspiro y calmo mi cuerpo. Espiro y calmo mi cuerpo.",
+      "inicio_s": 584.0,
+      "fin_s": 701.0
+    },
+    {
+      "id": "p05",
+      "ref": "p05",
+      "grupo": "sentimientos",
+      "numero": 5,
+      "titulo": "Gozo",
+      "verso": "Inspiro y siento gozo. Espiro y siento gozo.",
+      "inicio_s": 701.0,
+      "fin_s": 819.0
+    },
+    {
+      "id": "p06",
+      "ref": "p06",
+      "grupo": "sentimientos",
+      "numero": 6,
+      "titulo": "Felicidad",
+      "verso": "Inspiro y siento felicidad. Espiro y siento felicidad.",
+      "inicio_s": 819.0,
+      "fin_s": 937.0
+    },
+    {
+      "id": "p07",
+      "ref": "p07",
+      "grupo": "sentimientos",
+      "numero": 7,
+      "titulo": "Las actividades de la mente",
+      "verso": "Inspiro y conozco las actividades de mi mente. Espiro y las conozco.",
+      "inicio_s": 937.0,
+      "fin_s": 1055.0
+    },
+    {
+      "id": "p08",
+      "ref": "p08",
+      "grupo": "sentimientos",
+      "numero": 8,
+      "titulo": "Calmar las actividades de la mente",
+      "verso": "Inspiro y calmo las actividades de mi mente. Espiro y las calmo.",
+      "inicio_s": 1055.0,
+      "fin_s": 1173.0
+    },
+    {
+      "id": "p13",
+      "ref": "p13",
+      "grupo": "vision",
+      "numero": 13,
+      "titulo": "Impermanencia",
+      "verso": "Inspiro y observo la impermanencia. Espiro y observo la impermanencia.",
+      "inicio_s": 1173.0,
+      "fin_s": 1431.0
+    },
+    {
+      "id": "p16",
+      "ref": "p16",
+      "grupo": "vision",
+      "numero": 16,
+      "titulo": "Soltar",
+      "verso": "Inspiro y observo el soltar. Espiro y observo el soltar.",
+      "inicio_s": 1431.0,
+      "fin_s": 1608.0
+    },
+    {
+      "id": "reposo",
+      "ref": "reposo",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Reposo sin forma",
+      "verso": "Sin hacer nada, y despierto.",
+      "inicio_s": 1608.0,
+      "fin_s": 1668.0
+    },
+    {
+      "id": "transicion",
+      "ref": "transicion",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Tres respiraciones",
+      "verso": "Cuerpo, lugar, movimiento.",
+      "inicio_s": 1668.0,
+      "fin_s": 1740.0
+    },
+    {
+      "id": "dedicacion",
+      "ref": "dedicacion",
+      "grupo": "cierre",
+      "numero": null,
+      "titulo": "Dedicación de méritos",
+      "verso": "A través de esta virtud, alcanzaré el estado del Omnisciente.",
+      "inicio_s": 1740.0,
+      "fin_s": 1870.0
+    }
+  ]
+}
